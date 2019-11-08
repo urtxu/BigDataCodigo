@@ -21,7 +21,7 @@ namespace BigDataCodigo
                 string sqlquery = "select top 100 * from dbo.BigData";
                 SqlCommand sqlcomm = new SqlCommand(sqlquery, con);
                 con.Open();
-                SqlDataAdapter sda = new SqlDataAdapter(sqlcomm);
+                SqlDataAdapter sda = new SqlDataAdapter(sqlcomm); 
                 DataSet ds = new DataSet("BigData");
                 GridView gv = new GridView();
                 sda.Fill(ds);
